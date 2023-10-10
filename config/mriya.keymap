@@ -27,41 +27,41 @@
 
         default_layer {
             bindings = <
-              &kp ESC         &kp N1  &kp N2            &kp N3        &kp N4            &kp N5       &kp N6     &kp N7         &kp N8     &kp N9      &kp N0    &kp MINUS
-&kp CAPSLOCK  &kp TAB         &kp Q   &kp W             &kp E         &kp R             &kp T        &kp Y      &kp U          &kp I      &kp O       &kp P     &kp LBKT       &kp RIGHT_BRACKET
-              &kp LEFT_SHIFT  &kp A   &kp S             &kp D         &kp F             &kp G        &kp H      &kp J          &kp K      &kp L       &kp SEMI  &mt RCTRL SQT
-              &mo 1           &kp Z   &kp X             &kp C         &kp V             &kp B        &kp N      &kp M          &kp COMMA  &kp DOT     &kp FSLH  &mo 2
-                                      &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp SPACE    &kp SPACE  &kp BACKSPACE  &kp ENTER  &kp DELETE
+              &kp ESC         &kp N1  &kp N2            &kp N3     &kp N4        &kp N5          &kp N6         &kp N7     &kp N8     &kp N9         &kp N0    &kp MINUS
+&kp CAPSLOCK  &kp TAB         &kp Q   &kp W             &kp E      &kp R         &kp T           &kp Y          &kp U      &kp I      &kp O          &kp P     &kp LBKT          &kp RIGHT_BRACKET
+              &kp LEFT_SHIFT  &kp A   &kp S             &kp D      &kp F         &kp G           &kp H          &kp J      &kp K      &kp L          &kp SEMI  &kp SINGLE_QUOTE
+              &mo 1           &kp Z   &kp X             &kp C      &kp V         &kp B           &kp N          &kp M      &kp COMMA  &kp DOT        &kp FSLH  &mo 2
+                                      &kp LEFT_CONTROL  &kp SPACE  &kp LEFT_ALT  &kp LEFT_WIN    &kp RIGHT_WIN  &kp ENTER  &kp SPACE  &kp BACKSPACE
             >;
         };
 
-        lower_layer {
+        arrows_and_fs_layer {
             bindings = <
-                &trans          &kp F1    &kp F2  &kp F3    &kp F4    &kp F5       &kp F6     &kp F7        &kp F8    &kp F9     &kp F10   &kp F11
-&lt 3 CAPSLOCK  &kp UNDER       &trans    &trans  &trans    &trans    &trans       &trans     &trans        &trans    &trans     &trans    &kp F12          &kp EQUAL
-                &mt LCTRL PLUS  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS      &kp STAR  &kp LPAR   &kp RPAR  &mt RCTRL MINUS
-                &mt LALT EQUAL  &kp N1    &kp N2  &kp N3    &kp N4    &kp N5       &kp N6     &kp N7        &kp N8    &kp N9     &kp N0    &trans
-                                          &trans  &trans    &trans    &trans       &kp LEFT   &kp UP_ARROW  &kp DOWN  &kp RIGHT
+        &trans  &kp F1  &kp F2            &kp F3        &kp F4            &kp F5    &kp F6         &kp F7          &kp F8          &kp F9           &kp F10          &kp F11
+&trans  &trans  &trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &trans    &kp BACKSLASH  &trans          &kp UP_ARROW    &trans           &kp PRINTSCREEN  &kp F12  &kp TILDE
+        &trans  &trans  &trans            &trans        &kp LEFT_SHIFT    &trans    &kp GRAVE      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp DELETE       &trans
+        &trans  &mo 3   &trans            &trans        &trans            &trans    &kp EQUAL      &trans          &trans          &kp INSERT       &trans           &trans
+                        &trans            &trans        &trans            &trans    &kp LEFT       &kp UP_ARROW    &kp DOWN        &kp RIGHT_ARROW
             >;
         };
 
-        raise_layer {
+        num_layer {
             bindings = <
-        &trans           &trans           &trans     &trans     &trans     &trans          &trans        &trans    &trans     &trans     &trans           &trans
-&trans  &kp KP_NUM       &kp KP_SLASH     &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS    &kp C_VOL_UP  &kp HOME  &kp PSCRN  &kp PG_UP  &kp SLCK         &kp CAPS         &trans
-        &mt LCTRL EQUAL  &kp KP_MULTIPLY  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS     &kp C_MUTE    &kp LEFT  &kp UP     &kp RIGHT  &kp INS          &mt RCTRL K_APP
-        &trans           &kp KP_N0        &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_DOT      &kp C_VOL_DN  &kp END   &kp DOWN   &kp PG_DN  &kp PAUSE_BREAK  &trans
-                                          &trans     &trans     &trans     &lt 3 RET       &lt 3 ESC     &mo 3     &trans     &trans
+        &trans      &trans           &trans     &trans     &trans       &trans           &trans        &trans          &trans            &trans      &trans           &trans
+&trans  &kp KP_NUM  &kp KP_SLASH     &kp KP_N7  &kp KP_N8  &kp KP_N9    &kp KP_MINUS     &kp C_VOL_UP  &trans          &trans            &trans      &kp SLCK         &trans  &trans
+        &trans      &kp KP_MULTIPLY  &kp KP_N4  &kp KP_N5  &kp KP_N6    &kp KP_PLUS      &kp C_MUTE    &kp LEFT        &kp UP            &kp RIGHT   &trans           &trans
+        &trans      &kp KP_N0        &kp KP_N1  &kp KP_N2  &kp KP_N3    &kp KP_DOT       &kp C_VOL_DN  &trans          &kp DOWN          &trans      &kp PAUSE_BREAK  &trans
+                                     &kp HOME   &kp END    &kp PAGE_UP  &kp PAGE_DOWN    &kp C_MUTE    &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT
             >;
         };
 
-        adjust_layer {
+        bt_layer {
             bindings = <
-       &none        &none         &none         &none         &none         &none           &none         &none         &none         &none         &none         &none
-&none  &bootloader  &none         &none         &none         &none         &none           &none         &none         &none         &none         &none         &bootloader  &none
-       &bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
-       &sys_reset   &none         &none         &none         &none         &none           &none         &none         &none         &none         &none         &sys_reset
-                                  &none         &trans        &none         &trans          &trans        &trans        &trans        &trans
+            &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none  &none  &none  &none  &none  &none
+&bt BT_CLR  &none  &none         &none         &none         &none         &bootloader     &none  &none  &none  &none  &none  &none  &none
+            &none  &none         &none         &none         &none         &none           &none  &none  &none  &none  &none  &none
+            &none  &none         &none         &none         &none         &sys_reset      &none  &none  &none  &none  &none  &none
+                                 &none         &none         &none         &none           &none  &none  &none  &none
             >;
         };
     };
