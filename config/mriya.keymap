@@ -27,31 +27,31 @@
 
         default_layer {
             bindings = <
-              &kp ESC         &kp N1  &kp N2            &kp N3     &kp N4        &kp N5          &kp N6      &kp N7  &kp N8     &kp N9         &kp N0    &kp MINUS
-&kp CAPSLOCK  &kp TAB         &kp Q   &kp W             &kp E      &kp R         &kp T           &kp Y       &kp U   &kp I      &kp O          &kp P     &kp LBKT          &kp RIGHT_BRACKET
-              &kp LEFT_SHIFT  &kp A   &kp S             &kp D      &kp F         &kp G           &kp H       &kp J   &kp K      &kp L          &kp SEMI  &kp SINGLE_QUOTE
-              &mo 1           &kp Z   &kp X             &kp C      &kp V         &kp B           &kp N       &kp M   &kp COMMA  &kp DOT        &kp FSLH  &mo 2
-                                      &kp LEFT_CONTROL  &kp SPACE  &kp LEFT_ALT  &kp LEFT_WIN    &kp RETURN  &none   &kp SPACE  &kp BACKSPACE
+              &kp ESC         &kp N1  &kp N2            &kp N3     &kp N4        &kp N5          &kp N6      &kp N7         &kp N8     &kp N9         &kp N0    &kp MINUS
+&kp CAPSLOCK  &kp TAB         &kp Q   &kp W             &kp E      &kp R         &kp T           &kp Y       &kp U          &kp I      &kp O          &kp P     &kp LBKT          &kp RIGHT_BRACKET
+              &kp LEFT_SHIFT  &kp A   &kp S             &kp D      &kp F         &kp G           &kp H       &kp J          &kp K      &kp L          &kp SEMI  &kp SINGLE_QUOTE
+              &mo 1           &kp Z   &kp X             &kp C      &kp V         &kp B           &kp N       &kp M          &kp COMMA  &kp DOT        &kp FSLH  &mo 2
+                                      &kp LEFT_CONTROL  &kp SPACE  &kp LEFT_ALT  &kp LEFT_WIN    &kp RETURN  &kp LG(SPACE)  &kp SPACE  &kp BACKSPACE
             >;
         };
 
         arrows_and_fs_layer {
             bindings = <
-       &kp ESC  &kp F1  &kp F2            &kp F3        &kp F4            &kp F5      &kp F6         &kp F7          &kp F8          &kp F9           &kp F10          &kp F11
-&none  &none    &none   &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &none       &kp BACKSLASH  &kp HOME        &kp UP_ARROW    &kp END          &kp PRINTSCREEN  &kp F12  &kp TILDE
-       &none    &none   &none             &kp RET       &kp LSHFT         &none       &kp GRAVE      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp DELETE       &none
-       &none    &mo 3   &none             &none         &none             &none       &kp EQUAL      &kp PG_UP       &kp INSERT      &kp PG_DN        &none            &to 4
-                        &kp LCTRL         &kp SPACE     &kp LALT          &kp LGUI    &kp LEFT       &kp UP_ARROW    &kp DOWN        &kp RIGHT_ARROW
+          &kp ESC  &kp F1  &kp F2            &kp F3        &kp F4            &kp F5       &kp F6         &kp F7          &kp F8          &kp F9           &kp F10          &kp F11
+&kp CAPS  &none    &none   &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &none        &kp BACKSLASH  &kp HOME        &kp UP_ARROW    &kp END          &kp PRINTSCREEN  &kp F12  &kp TILDE
+          &none    &none   &none             &kp RET       &kp LSHFT         &none        &kp GRAVE      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp DELETE       &none
+          &none    &mo 3   &none             &none         &none             &kp ENTER    &kp EQUAL      &kp PG_UP       &kp INSERT      &kp PG_DN        &none            &to 4
+                           &kp LCTRL         &kp SPACE     &kp LALT          &kp LGUI     &kp LEFT       &kp UP_ARROW    &kp DOWN        &kp RIGHT_ARROW
             >;
         };
 
         num_layer {
             bindings = <
-       &none       &kp F1           &kp F2     &kp F3     &kp F4     &kp F5          &kp F6        &kp F7    &kp F8      &kp F9      &kp F10  &kp F11
-&none  &kp KP_NUM  &kp KP_SLASH     &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS    &kp C_VOL_UP  &none     &kp UP      &none       &trans   &kp F12  &none
-       &none       &kp KP_MULTIPLY  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS     &kp C_MUTE    &kp LEFT  &kp DOWN    &kp RIGHT   &none    &none
-       &none       &kp KP_N0        &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_DOT      &kp C_VOL_DN  &none     &none       &none       &trans   &none
-                                    &none      &none      &none      &none           &kp C_MUTE    &kp C_PP  &kp C_PREV  &kp C_NEXT
+          &kp ESCAPE  &kp F1           &kp F2     &kp F3     &kp F4     &kp F5          &kp F6        &kp F7     &kp F8      &kp F9      &kp F10  &kp F11
+&kp CAPS  &kp KP_NUM  &kp KP_SLASH     &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS    &kp C_VOL_UP  &kp HOME   &kp UP      &kp END     &none    &kp F12  &none
+          &none       &kp KP_MULTIPLY  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS     &kp C_MUTE    &kp LEFT   &kp DOWN    &kp RIGHT   &none    &none
+          &none       &kp KP_N0        &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_DOT      &kp C_VOL_DN  &kp PG_UP  &kp INSERT  &kp PG_DN   &none    &none
+                                       &kp LCTRL  &kp SPACE  &kp LALT   &kp ENTER       &kp C_MUTE    &kp C_PP   &kp C_PREV  &kp C_NEXT
             >;
         };
 
