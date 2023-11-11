@@ -47,11 +47,11 @@
 
         num_layer {
             bindings = <
-          &kp ESCAPE  &kp F1           &kp F2     &kp F3     &kp F4     &kp F5          &kp F6        &kp F7      &kp F8            &kp F9      &kp F10            &kp F11
-&kp CAPS  &kp KP_NUM  &kp KP_SLASH     &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS    &kp C_VOL_UP  &kp HOME    &kp UP            &kp END     &kp PRINTSCREEN    &kp F12  &none
-          &kp LSHIFT  &kp KP_MULTIPLY  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS     &kp C_MUTE    &kp LEFT    &kp DOWN          &kp RIGHT   &kp C_VOLUME_UP    &trans
-          &none       &kp KP_N0        &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_DOT      &kp C_VOL_DN  &kp PG_UP   &kp INSERT        &kp PG_DN   &kp C_VOLUME_DOWN  &none
-                                       &kp LCTRL  &kp SPACE  &kp LALT   &kp ENTER       &kp C_MUTE    &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT
+          &kp ESCAPE  &kp F1           &kp F2     &kp F3     &kp F4     &kp F5          &kp F6      &kp F7      &kp F8            &kp F9      &kp F10            &kp F11
+&kp CAPS  &kp KP_NUM  &kp KP_SLASH     &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS    &trans      &kp HOME    &kp UP            &kp END     &kp PRINTSCREEN    &kp F12  &none
+          &kp LSHIFT  &kp KP_MULTIPLY  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS     &trans      &kp LEFT    &kp DOWN          &kp RIGHT   &kp C_VOLUME_UP    &trans
+          &trans      &kp KP_N0        &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_DOT      &trans      &kp PG_UP   &kp INSERT        &kp PG_DN   &kp C_VOLUME_DOWN  &trans
+                                       &kp LCTRL  &kp SPACE  &kp LALT   &kp ENTER       &kp C_MUTE  &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT
             >;
         };
 
