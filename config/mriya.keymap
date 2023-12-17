@@ -37,11 +37,11 @@
 
         arrows_and_fs_layer {
             bindings = <
-        &mo 3   &kp F1           &kp F2  &kp F3         &kp F4          &kp F5       &kp F6  &kp F7          &kp F8          &kp F9           &kp F10          &kp F11
-&trans  &trans  &kp PRINTSCREEN  &trans  &kp BACKSLASH  &kp PIPE        &kp PLUS     &trans  &kp HOME        &kp UP_ARROW    &kp END          &kp PRINTSCREEN  &kp F12  &trans
-        &trans  &trans           &trans  &trans         &kp UNDERSCORE  &kp MINUS    &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans           &trans
-        &trans  &trans           &trans  &trans         &kp GRAVE       &kp TILDE    &trans  &kp PG_UP       &kp INSERT      &kp PG_DN        &trans           &trans
-                                 &trans  &trans         &trans          &trans       &trans  &trans          &trans          &kp DELETE
+        &mo 3   &kp F1           &kp F2  &kp F3         &kp F4          &kp F5       &kp F6     &kp F7          &kp F8          &kp F9           &kp F10          &kp F11
+&trans  &trans  &kp PRINTSCREEN  &trans  &kp BACKSLASH  &kp PIPE        &kp PLUS     &kp EQUAL  &kp HOME        &kp UP_ARROW    &kp END          &kp PRINTSCREEN  &kp F12  &trans
+        &trans  &trans           &trans  &trans         &kp UNDERSCORE  &kp MINUS    &kp DOT    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans           &trans
+        &trans  &trans           &trans  &trans         &kp GRAVE       &kp TILDE    &kp SLASH  &kp PG_UP       &kp INSERT      &kp PG_DN        &trans           &trans
+                                 &trans  &trans         &trans          &trans       &trans     &trans          &trans          &kp DELETE
             >;
         };
 
