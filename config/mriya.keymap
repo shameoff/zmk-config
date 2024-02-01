@@ -13,13 +13,9 @@
 #define RSE 2
 #define ADJ 3
 
-&lt {
-    quick_tap_ms = <200>;
-};
+&lt { quick_tap_ms = <200>; };
 
-&mt {
-    quick_tap_ms = <200>;
-};
+&mt { quick_tap_ms = <200>; };
 
 / {
     keymap {
@@ -61,7 +57,17 @@
 &none  &none  &none         &none         &none         &none         &bootloader     &none     &none  &none  &none  &none  &none  &none
        &none  &none         &none         &none         &none         &none           &none     &none  &none  &none  &none  &none
        &none  &none         &none         &none         &none         &sys_reset      &kp LWIN  &none  &none  &none  &none  &none
-                            &none         &none         &none         &bt BT_CLR      &none     &none  &none  &none
+                            &none         &none         &none         &bt BT_CLR      &none     &none  &to 0  &to 4
+            >;
+        };
+
+        MacOS_Layer {
+            bindings = <
+           &kp ESC    &kp N1  &kp N2    &kp N3     &kp N4  &kp N5     &kp N6         &kp N7    &kp N8     &kp N9    &kp N0    &kp RBKT
+&kp LCTRL  &kp TAB    &kp Q   &kp W     &kp E      &kp R   &kp T      &kp Y          &kp U     &kp I      &kp O     &kp P     &kp LBKT  &kp RCTRL
+           &kp LSHFT  &kp A   &kp S     &kp D      &kp F   &kp G      &kp H          &kp J     &kp K      &kp L     &kp SEMI  &kp SQT
+           &kp LALT   &kp Z   &kp X     &kp C      &kp V   &kp B      &kp N          &kp M     &kp COMMA  &kp DOT   &kp FSLH  &mo 2
+                              &kp LGUI  &kp SPACE  &mo 1   &kp RET    &kp LG(SPACE)  &kp CAPS  &kp SPACE  &kp BSPC
             >;
         };
     };
