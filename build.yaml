@@ -1,6 +1,7 @@
 include:
   - board: nice_nano_v2
     shield: mriya_left
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
     snippet: studio-rpc-usb-uart # включает RPC endpoint для Studio
 
   - board: nice_nano_v2
