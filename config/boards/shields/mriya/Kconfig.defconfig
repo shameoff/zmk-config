@@ -6,6 +6,12 @@ config ZMK_KEYBOARD_NAME
 config ZMK_SPLIT_BLE_ROLE_CENTRAL
 	default y
 
+config ZMK_STUDIO_LOCKING
+	default n
+
+config ZMK_SPLIT_BLE
+  default y
+
 endif # SHIELD_MRIYA_LEFT
 
 if SHIELD_MRIYA_LEFT || SHIELD_MRIYA_RIGHT
